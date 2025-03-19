@@ -38,4 +38,46 @@ function loginUserMessage(username) {
     }
     return `${username} just logged in `
 }
-console.log(loginUserMessage(""));
+// console.log(loginUserMessage("rohan"));
+
+function calculateCartPrice(...num1) {
+    return num1
+}
+// console.log(calculateCartPrice(200,400,608,745,902));
+
+function calculateCartPrice1(val1, val2, ...num1) {
+    return num1
+}
+
+// console.log(calculateCartPrice1(200,400,608,745,902));
+
+
+//+++++  pass object in function ++++++++++
+
+const user = {
+    username: "rohan",
+    price: 634
+}
+
+function handleObj(anyObject){
+console.log(`Username is ${anyObject.username} and price is${anyObject.price}`);
+
+}
+// handleObj(user)    //or
+handleObj({
+    username: "wjdkja",
+    price:  635
+})
+
+
+//+++++++++++   pass array in function   +++++++++++
+
+const myNewArray = [ 123, 543, 743, 854, 834]
+function returnValue(getArray) {
+    return getArray[4]
+}
+
+// console.log(returnValue(myNewArray));   // or
+console.log(returnValue([ 123, 543, 743, 854, 834]));
+
+
