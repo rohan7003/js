@@ -1,4 +1,4 @@
-// for of loop
+// forof loop
 
 const arr = [1,2,3,4,5]
 for (const num of arr) {
